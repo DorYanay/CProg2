@@ -3,7 +3,7 @@
 
 int main()
 {
-    int Mat[size][size];
+    int mat[SIZE][SIZE];
     char input = 'l';
     int i, j;
     while (input != 'D')
@@ -12,19 +12,19 @@ int main()
         switch (input)
         {
         case 'A':
-            A(Mat);
+            A(mat);
             break;
 
         case 'B':
             scanf(" %d", &i);
             scanf(" %d", &j);
-            B(Mat, i, j);
+            B(mat, i, j);
             break;
 
         case 'C':
             scanf(" %d", &i);
             scanf(" %d", &j);
-            C(Mat, i, j);
+            C(mat, i, j);
             break;
         }
     }
