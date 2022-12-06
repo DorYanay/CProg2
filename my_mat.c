@@ -35,10 +35,6 @@ int min(int a, int b)
     {
         return b;
     }
-    if (a == b)
-    {
-        return a;
-    }
 }
 
 void A(int Mat[SIZE][SIZE])
