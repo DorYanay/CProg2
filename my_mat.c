@@ -56,13 +56,13 @@ void A(int Mat[SIZE][SIZE])
 
 void B(int Mat[SIZE][SIZE], int i, int j)
 {
-    if (Mat[i][j] == 0)
+    if (Mat[i][j])
     {
-        printf("False\n");
+        printf("True\n");
     }
     else
     {
-        printf("True\n");
+        printf("False\n");
     }
 }
 
