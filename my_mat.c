@@ -17,7 +17,7 @@ void DistMat(int Mat[SIZE][SIZE])
                     }
                     else
                     {
-                        M[i][j] = min(Mat[i][j], Mat[i][k] + Mat[k][j]);
+                        Mat[i][j] = min(Mat[i][j], Mat[i][k] + Mat[k][j]);
                     }
                 }
             }
