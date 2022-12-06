@@ -8,7 +8,7 @@ int main()
     int i, j;
     while (input != 'D')
     {
-        scanf(" %c", &input);
+        scanf("%c", &input);
         switch (input)
         {
         case 'A':
@@ -16,14 +16,14 @@ int main()
             break;
 
         case 'B':
-            scanf(" %d", &i);
-            scanf(" %d", &j);
+            scanf("%d", &i);
+            scanf("%d", &j);
             B(mat, i, j);
             break;
 
         case 'C':
-            scanf(" %d", &i);
-            scanf(" %d", &j);
+            scanf("%d", &i);
+            scanf("%d", &j);
             C(mat, i, j);
             break;
         }
