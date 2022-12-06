@@ -52,26 +52,26 @@ void A(int Mat[SIZE][SIZE])
     DistMat(Mat);
 }
 
-void B(int Mat[SIZE][SIZE], int i, int j)
+int B(int Mat[SIZE][SIZE], int i, int j)
 {
     if (Mat[i][j])
     {
-        printf("True\n");
+        return 1;
     }
     else
     {
-        printf("False\n");
+        return 0;
     }
 }
 
-void C(int Mat[SIZE][SIZE], int i, int j)
+int C(int Mat[SIZE][SIZE], int i, int j)
 {
     if (Mat[i][j] == 0)
     {
-        printf("-1\n");
+        return 0;
     }
     else
     {
-        printf("%d\n", Mat[i][j]);
+        return 1;
     }
 }
