@@ -13,6 +13,7 @@ int main()
         {
         case 'A':
             A(mat);
+            DistMat(mat);
             break;
 
         case 'B':
