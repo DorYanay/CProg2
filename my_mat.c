@@ -9,11 +9,17 @@ void DistMat(int Mat[SIZE][SIZE])
         {
             for (int j = 0; k < SIZE; j++)
             {
-                if (i != j && Mat[i][k] != 0 && Mat[k][j] != 0)
+                if (i != j && Mat[i][k] != 0 && Mat[k][j] != 0 && Mat[i][j] == 0)
                 {
-                    Mat[i][j] = Mat[i][k] + Mat[k][j];
+                    if (Mat[i][j] == 0)
+                    {
+                        Mat[i][j] = Mat[i][k] + Mat[k][j];
+                    }
                 }
-                Mat[i][j] = min(Mat[i][j], Mat[i][k] + Mat[k][j]);
+                else
+                {
+                    Mat[i][j] = min(Mat[i][j], Mat[i][k] + Mat[k][j]);
+                }
             }
         }
     }
