@@ -5,25 +5,26 @@ void DistMat(int Mat[SIZE][SIZE])
 {
     for (int k = 0; k < SIZE; k++)
     {
-        for (int i = 0; k < SIZE; i++)
+        for (int i = 0; i < SIZE; i++)
         {
-            for (int j = 0; k < SIZE; j++)
+            for (int j = 0; j < SIZE; j++)
             {
-                if (i != j && Mat[i][k] != 0 && Mat[k][j] != 0 && Mat[i][j] == 0)
+                if (i != j && Mat[i][k] != 0 && Mat[k][j] != 0)
                 {
-                    if (Mat[i][j] == 0)
+                    if (M[i][j] == 0)
                     {
-                        Mat[i][j] = Mat[i][k] + Mat[k][j];
+                        M[i][j] = M[i][k] + M[k][j];
                     }
                     else
                     {
-                        Mat[i][j] = min(Mat[i][j], Mat[i][k] + Mat[k][j]);
+                        M[i][j] = min(Mat[i][j], Mat[i][k] + Mat[k][j]);
                     }
                 }
             }
         }
     }
 }
+
 int min(int a, int b)
 {
     if (a < b)
