@@ -49,6 +49,7 @@ void A(int Mat[SIZE][SIZE])
             Mat[i][j] = n;
         }
     }
+    DistMat(Mat);
 }
 
 void B(int Mat[SIZE][SIZE], int i, int j)
