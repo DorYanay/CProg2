@@ -39,39 +39,37 @@ int min(int a, int b)
 
 void A(int Mat[SIZE][SIZE])
 {
-    int n;
     for (int i = 0; i < SIZE; i++)
     {
         for (int j = 0; j < SIZE; j++)
         {
 
-            scanf("%d", &n);
-            Mat[i][j] = n;
+            scanf("%d", &Mat[i][j]);
         }
     }
     DistMat(Mat);
 }
 
-int B(int Mat[SIZE][SIZE], int i, int j)
+void B(int Mat[SIZE][SIZE], int i, int j)
 {
     if (Mat[i][j])
     {
-        return 1;
+        printf("True\n");
     }
     else
     {
-        return 0;
+        printf("False\n");
     }
 }
 
-int C(int Mat[SIZE][SIZE], int i, int j)
+void C(int Mat[SIZE][SIZE], int i, int j)
 {
     if (Mat[i][j] == 0)
     {
-        return 0;
+        printf("-1\n");
     }
     else
     {
-        return 1;
+        printf("%d\n", Mat[i][j]);
     }
 }

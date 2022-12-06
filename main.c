@@ -18,27 +18,13 @@ int main()
         case 'B':
             scanf("%d", &i);
             scanf("%d", &j);
-            if (B(mat, i, j) != 0)
-            {
-                printf("True\n");
-            }
-            else
-            {
-                printf("False\n");
-            }
+            B(mat, i, j);
             break;
 
         case 'C':
             scanf("%d", &i);
             scanf("%d", &j);
-            if (C(mat, i, j) != 0)
-            {
-                printf("%d\n", mat[i][j]);
-            }
-            else
-            {
-                printf("-1\n");
-            }
+            C(mat, i, j);
             break;
         }
     }
