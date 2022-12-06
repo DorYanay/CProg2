@@ -11,9 +11,9 @@ void DistMat(int Mat[SIZE][SIZE])
             {
                 if (i != j && Mat[i][k] != 0 && Mat[k][j] != 0)
                 {
-                    if (M[i][j] == 0)
+                    if (Mat[i][j] == 0)
                     {
-                        M[i][j] = M[i][k] + M[k][j];
+                        Mat[i][j] = Mat[i][k] + M[k][j];
                     }
                     else
                     {
@@ -49,6 +49,7 @@ void A(int Mat[SIZE][SIZE])
             Mat[i][j] = n;
         }
     }
+    DistMat(Mat);
 }
 
 int B(int Mat[SIZE][SIZE], int i, int j)
