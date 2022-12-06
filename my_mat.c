@@ -39,13 +39,11 @@ int min(int a, int b)
 
 void A(int Mat[SIZE][SIZE])
 {
-    int n;
     for (int i = 0; i < SIZE; i++)
     {
         for (int j = 0; j < SIZE; j++)
         {
-            scanf("%d", &n);
-            Mat[i][j] = n;
+            scanf("%d", &Mat[i][j]);
         }
     }
     DistMat(Mat);
