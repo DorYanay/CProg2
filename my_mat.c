@@ -13,7 +13,7 @@ void DistMat(int Mat[SIZE][SIZE])
                 {
                     if (Mat[i][j] == 0)
                     {
-                        Mat[i][j] = Mat[i][k] + M[k][j];
+                        Mat[i][j] = Mat[i][k] + Mat[k][j];
                     }
                     else
                     {
