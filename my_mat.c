@@ -74,6 +74,6 @@ void C(int Mat[SIZE][SIZE], int i, int j)
     }
     else
     {
-        printf("%d", Mat[i][j]);
+        printf("%d\n", Mat[i][j]);
     }
 }
